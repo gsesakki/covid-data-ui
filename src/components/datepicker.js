@@ -5,10 +5,10 @@ import useStyles from "../styles";
 const CaseDatePicker = (props) => {
 
     const classes = useStyles();
-    const today = new Date();
-    // let yesterday = new Date();
-    // yesterday = yesterday.setDate(new Date() -1);
-    const [dateddl, setDateddl] = useState(join(today));
+    // const today = new Date();
+    let date = new Date();
+    date.setDate(date.getDate() -1);
+    const [dateddl, setDateddl] = useState(join(date));
 
     const handleDateChange = (e) => {
         setDateddl(new Date(e._d));
@@ -35,7 +35,7 @@ const CaseDatePicker = (props) => {
         autoOk={true}
         variant="inline"
         minDate={new Date(props.datePickerFrom)}
-        maxDate={today}
+        maxDate={date}
         value={dateddl}
         // onAccept={onAcceptDate}
         onChange={handleDateChange}

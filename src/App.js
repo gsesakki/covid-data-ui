@@ -5,8 +5,6 @@ import { useEffect, useState } from 'react';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import MomentUtils from '@date-io/moment';
 
-
-
 const App = () => {
 
   const [fromDate, setFromDate] = useState(new Date());

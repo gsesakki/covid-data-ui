@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core'
 const useStyles = makeStyles((theme) => ({
   container: {
     background: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 3)
+    padding: theme.spacing(2, 0, 3)
   },
 
   icons: {

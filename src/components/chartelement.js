@@ -23,12 +23,13 @@ const ChartElement = (props) => {
     theme: "light2",
     animationEnabled: true,
     title: {
-      text: `Cases for ${status.state}`
+      text: `Cases for ${status.state}`,
+      fontSize: 24,
     },
     subtitles: [{
       // text: `${status.percentage} Positive`,
-      verticalAlign: "center",
-      fontSize: 24,
+      verticalAlign: "left",
+      fontSize: 20,
       dockInsidePlotArea: true
     }],
     data: [{
